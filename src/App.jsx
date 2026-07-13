@@ -9,8 +9,8 @@ function App() {
       <Header
         title="My shop"
         nav1="Home"
-        nav2="Sports"
-        nav3="Technology"
+        nav2="Products"
+        nav3="About"
         nav4="Contact"
       />
       <Hero
