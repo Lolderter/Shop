@@ -23,3 +23,50 @@
   font-family: Arial, sans-serif;
   width: 100vw;
 }
+
+
+
+.header-title {
+  margin: 0;
+  font-size: 1.5em;
+}
+
+.nav-links {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.nav-links a {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  color: #fff;
+  text-decoration: none;
+}
+
+.nav-icon {
+  width: 18px;
+  height: 18px;
+  filter: invert(1);
+}
+
+.logo-layout {
+  display: flex;
+  align-items: center;
+}
+
+.header-title {
+  margin: 0;
+  font-size: 2em;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.shop-icon {
+  width: 48px;
+  height: 48px;
+  object-fit: contain;
+  filter: invert(1) brightness(2);
+}
