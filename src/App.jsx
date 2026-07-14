@@ -7,11 +7,12 @@ import Footer from './Footer';
 function App() {
   return (
     <>
-      <Header
+      <Header id="top"
+
         title="My shop"
         nav1="Home"
         nav2="Products"
-        nav3="Technology"
+        nav3="Reviews"
         nav4="Contact"
       />
       <Hero

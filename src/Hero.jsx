@@ -39,7 +39,7 @@ function Hero({ headline, description }) {
       brand: "Lenovo",
       category: "Electronics",
       price: "1000$",
-      count:1
+      count:3
     },
     {
       id: 6,
@@ -47,7 +47,7 @@ function Hero({ headline, description }) {
       brand: "Blue Yeti",
       category: "Accessories",
       price: "200$",
-      count:1
+      count:2
     },
     {
       id: 7,
@@ -55,7 +55,7 @@ function Hero({ headline, description }) {
       brand: "Sony",
       category: "Accessories",
       price: "300$",
-      count:1
+      count:6
     },
   ];
 
@@ -96,7 +96,7 @@ function Hero({ headline, description }) {
         ))}
       </div>
 
-      <div className="product-list">
+      <div className="product-list" id="products">
         {filteredProducts.map((product) => (
           <div
                key={product.id} className={`product-card ${product.count === 0 ? "out-of-stock" : ""}`}>
