@@ -87,6 +87,13 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
+
+.product-card.out-of-stock {
+  
+  opacity: 0.5;
+
+}
+
 .product-name {
   margin: 0 0 8px;
   text-align: center;

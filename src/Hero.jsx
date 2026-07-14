@@ -98,7 +98,8 @@ function Hero({ headline, description }) {
 
       <div className="product-list">
         {filteredProducts.map((product) => (
-          <div key={product.id} className="product-card">
+          <div
+               key={product.id} className={`product-card ${product.count === 0 ? "out-of-stock" : ""}`}>
             <h3 className="product-name">{product.name}</h3>
             <p className="product-brand">Brand: {product.brand}</p>
             <p className="product-category">Category: {product.category}</p>
