@@ -9,7 +9,9 @@ function Hero({ headline, description, addToCart }) {
   const categories = ["All", ...new Set(products.map((p) => p.category))];
 
   const filteredProducts = products
-    .filter((p) => selectedCategory === "All" || p.category === selectedCategory)
+    .filter(
+      (p) => selectedCategory === "All" || p.category === selectedCategory,
+    )
     .filter((p) => p.name.toLowerCase().includes(query.toLowerCase()));
 
   return (
@@ -42,7 +44,9 @@ function Hero({ headline, description, addToCart }) {
 
       <div className="product-list" id="products">
         {filteredProducts.length === 0 ? (
-          <p className="no-results">No products found. Try a different search or category.</p>
+          <p className="no-results">
+            No products found. Try a different search or category.
+          </p>
         ) : (
           filteredProducts.map((product) => (
             <div

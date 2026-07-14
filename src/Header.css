@@ -11,7 +11,7 @@
   }
 }
 #header {
-  position: fixed ;
+  position: fixed;
   top: 0;
   z-index: 100;
   background-color: #2b74c2;
@@ -23,8 +23,6 @@
   font-family: Arial, sans-serif;
   width: 100vw;
 }
-
-
 
 .header-title {
   margin: 0;

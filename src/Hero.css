@@ -1,6 +1,3 @@
-
-
-
 .hero {
   background-color: #547792;
   padding: 40px 24px;
@@ -12,7 +9,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  
 }
 
 .hero-headline {
@@ -22,7 +18,7 @@
 
 .hero-description {
   font-size: 1.1em;
-  color: #EAE0CF;
+  color: #eae0cf;
 }
 
 .search-bar {
@@ -48,14 +44,17 @@
   padding: 0 28px;
   border-radius: 8px;
   border: none;
-  background-color: #EAE0CF;
+  background-color: #eae0cf;
   color: #213448;
   font-weight: bold;
   font-size: 1em;
   cursor: pointer;
   box-sizing: border-box;
   box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
-  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
+  transition:
+    background-color 0.2s ease,
+    transform 0.15s ease,
+    box-shadow 0.2s ease;
 }
 
 .search-button:hover {
@@ -87,11 +86,8 @@
   box-shadow: 0 3px 8px rgba(0, 0, 0, 0.15);
 }
 
-
 .product-card.out-of-stock {
-  
   opacity: 0.5;
-
 }
 
 .product-name {
@@ -102,8 +98,8 @@
 .product-brand {
   margin: 0 0 4px;
   font-weight: bold;
-   color: #547792;
-   font-size: 0.85em;
+  color: #547792;
+  font-size: 0.85em;
 }
 
 .product-category {
@@ -115,8 +111,8 @@
 .product-price {
   margin: 0;
   font-size: 1.2em;
-   color: #3a922d;
-   text-align: center;
+  color: #3a922d;
+  text-align: center;
 }
 
 .product-button {

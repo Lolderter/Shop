@@ -28,7 +28,10 @@ function Reviews() {
       <div className="review-list">
         {reviews.map((review) => (
           <div key={review.id} className="review-card">
-            <p className="review-stars">{"★".repeat(review.rating)}{"☆".repeat(5 - review.rating)}</p>
+            <p className="review-stars">
+              {"★".repeat(review.rating)}
+              {"☆".repeat(5 - review.rating)}
+            </p>
             <p className="review-text">"{review.text}"</p>
             <p className="review-name">— {review.name}</p>
           </div>

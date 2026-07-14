@@ -1,27 +1,23 @@
-import './App.css';
-import Header from './Header';
-import Hero from './Hero';
+import "./App.css";
+import Header from "./Header";
+import Hero from "./Hero";
 import Reviews from "./Reviews";
-import Footer from './Footer';
+import Footer from "./Footer";
 
 function App() {
   return (
     <>
-      <Header id="top"
-
+      <Header
+        id="top"
         title="My shop"
         nav1="Home"
         nav2="Products"
         nav3="Reviews"
         nav4="Contact"
       />
-      <Hero
-      />
+      <Hero />
       <Reviews />
-      <Footer
-      text={"© MyShop. All Rights Reserved."}
-      
-      />
+      <Footer text={"© MyShop. All Rights Reserved."} />
     </>
   );
 }
