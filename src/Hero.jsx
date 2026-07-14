@@ -4,6 +4,9 @@ import "./Hero.css";
 function Hero({ headline, description }) {
   const [selectedCategory, setSelectedCategory] = useState("All");
   const [query, setQuery] = useState("");
+  function handleClick() {
+    alert("Added to cart");
+  }
 
   const products = [
     {
@@ -94,7 +97,7 @@ function Hero({ headline, description }) {
             <p className="product-category">Category: {product.category}</p>
             <p className="product-price">{product.price}</p>
             <p className="product-price">
-              <button>Buy Now</button>
+              <button onClick={handleClick}>Buy Now</button>
             </p>
           </div>
         ))}
