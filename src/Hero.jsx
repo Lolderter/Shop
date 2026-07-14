@@ -1,8 +1,9 @@
-
+import { useState } from "react";
 import "./Hero.css";
 
 function Hero({ headline, description }) {
-  
+  const [selectedCategory, setSelectedCategory] = useState("All");
+  const [query, setQuery] = useState("");
 
   const products = [
     {
@@ -17,18 +18,43 @@ function Hero({ headline, description }) {
       name: "Phone",
       brand: "Samsung",
       category: "Electronics",
+      price: "250$"
+    },
+    {
+      id: 4,
+      name: "iPad",
+      brand: "Apple",
+      category: "Electronics",
       price: "500$"
     },
     {
-      id: 3,
+      id: 5,
+      name: "Laptop",
+      brand: "Lenovo",
+      category: "Electronics",
+      price: "1000$"
+    },
+    {
+      id: 6,
+      name: "Microphone",
+      brand: "Blue Yeti",
+      category: "Accessories",
+      price: "200$"
+    },
+    {
+      id: 7,
       name: "Headphones",
       brand: "Sony",
       category: "Accessories",
-      price: "100$"
+      price: "300$"
     },
   ];
 
- 
+  const categories = ["All", ...new Set(products.map((p) => p.category))];
+
+  const filteredProducts = products
+    .filter((p) => selectedCategory === "All" || p.category === selectedCategory)
+    .filter((p) => p.name.toLowerCase().includes(query.toLowerCase()));
 
   return (
     <div className="hero">
@@ -38,16 +64,30 @@ function Hero({ headline, description }) {
       <div className="search-bar">
         <input
           type="text"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
           placeholder="Search products..."
           className="search-input"
         />
-        <button  className="search-button">
+        <button className="search-button">
           Search
         </button>
       </div>
 
+      <div className="category-bar">
+        {categories.map((category) => (
+          <button
+            key={category}
+            onClick={() => setSelectedCategory(category)}
+            className={`category-button ${selectedCategory === category ? "active" : ""}`}
+          >
+            {category}
+          </button>
+        ))}
+      </div>
+
       <div className="product-list">
-        {products.map((product) => (
+        {filteredProducts.map((product) => (
           <div key={product.id} className="product-card">
             <h3 className="product-name">{product.name}</h3>
             <p className="product-brand">Brand: {product.brand}</p>

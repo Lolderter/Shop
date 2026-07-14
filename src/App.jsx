@@ -11,7 +11,7 @@ function App() {
         title="My shop"
         nav1="Home"
         nav2="Products"
-        nav3="Technolog"
+        nav3="Technology"
         nav4="Contact"
       />
       <Hero

@@ -29,29 +29,44 @@
   margin-top: 24px;
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 8px;
 }
 
 .search-input {
-  padding: 10px 14px;
+  height: 44px;
+  padding: 0 14px;
   border-radius: 8px;
   border: none;
   width: 260px;
   font-size: 1em;
+  box-sizing: border-box;
 }
 
 .search-button {
-  padding: 20px 28px;
+  height: 44px;
+  padding: 0 28px;
   border-radius: 8px;
   border: none;
   background-color: #EAE0CF;
   color: #213448;
   font-weight: bold;
+  font-size: 1em;
   cursor: pointer;
+  box-sizing: border-box;
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.2s ease, transform 0.15s ease, box-shadow 0.2s ease;
 }
 
 .search-button:hover {
   background-color: #d8cbb0;
+  transform: translateY(-2px);
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-button:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.15);
 }
 
 .product-list {
@@ -93,7 +108,7 @@
 .product-price {
   margin: 0;
   font-size: 1.2em;
-   color: #39ba25;
+   color: #3a922d;
    text-align: center;
 }
 
