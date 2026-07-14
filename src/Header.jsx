@@ -4,10 +4,12 @@ function Header({ title, nav1, nav2, nav3, nav4 }) {
   return (
     <header id="header" className="header">
       <div className="logo-layout">
-        <h1 className="header-title">
-          <img className="shop-icon" src="/src/assets/shop.svg" alt="" />
-          {title}
-        </h1>
+        <a href="#top">
+          <h1 className="header-title">
+            <img className="shop-icon" src="/src/assets/shop.svg" alt="" />
+            {title}
+          </h1>
+        </a>
       </div>
       <nav className="nav-links">
         <a href="#top">

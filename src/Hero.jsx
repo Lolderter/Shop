@@ -53,6 +53,13 @@ function Hero({ headline, description, addToCart }) {
               key={product.id}
               className={`product-card ${product.count === 0 ? "out-of-stock" : ""}`}
             >
+              {product.image && (
+                <img
+                  src={product.image}
+                  alt={product.name}
+                  className="product-image"
+                />
+              )}
               <h3 className="product-name">{product.name}</h3>
               <p className="product-brand">Brand: {product.brand}</p>
               <p className="product-category">Category: {product.category}</p>

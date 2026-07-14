@@ -118,6 +118,12 @@
 .product-button {
   color: wheat;
 }
+.product-image {
+  width: 160px;
+  height: 160px;
+  object-fit: contain;
+  margin-bottom: 10px;
+}
 
 @media (max-width: 600px) {
   .hero-headline {
